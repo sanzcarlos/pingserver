@@ -1,0 +1,16 @@
+:root {
+    --digital-orange-2: #F16E00;
+    --digital-orange-1: #FF7900;
+}
+.btn-primary {
+    background-color: var(--digital-orange-2);
+    border-color: var(--digital-orange-2);
+}
+.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <title>{% block title %}{% endblock %}</title>
+        {% endblock %}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+        <div id="footer">
+            {% block footer %}
+            {% endblock %}
+        </div>
+        <script type='text/javascript' src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+        <script type='text/javascript' src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script>
+        $(document).ready(function(){
+            {% block script %}
+            {% endblock %}
+        });
+        </script>
+    </body>
+</html>
