@@ -1,0 +1,10 @@
+Flask==1.1
+Flask-HTTPAuth==3.3
+Jinja2>=2.10.1
+MarkupSafe==1.1
+WTForms==2.1
+werkzeug>=0.15.3
+click==7.0
+configparser>=3.8
+itsdangerous==1.1
+gunicorn==19.9
